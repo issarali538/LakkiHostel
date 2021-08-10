@@ -45,7 +45,7 @@ switch (basename($_SERVER['PHP_SELF'])) {
    <!-- bootstrap  -->
    <link rel="stylesheet" href="../css/bootstrap.min.css">
    <!-- fontawesome -->
-   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
    <!-- custom css  -->
    <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -58,7 +58,9 @@ switch (basename($_SERVER['PHP_SELF'])) {
             <div class="col-md-12">
                <h1>Welcome to Kabir Hostel</h1>
             </div>
-            <div class="col-md-2" id="logo-hostel"></div>
+            <div class="col-md-2" id="logo-hostel">
+               <div><img src="../images/hostel-logo.png" alt=""></div>
+            </div>
             <!-- menue    -->
             <div class="col-md-8">
                <ul>
@@ -71,7 +73,9 @@ switch (basename($_SERVER['PHP_SELF'])) {
                </ul>
             </div>
             <!-- hostel logo   -->
-            <div class="col-md-2" id="logo-college"></div>
+            <div class="col-md-2" id="logo-college">
+               <div><img src="../images/college-logo.jpg" alt=""></div>
+            </div>
          </div>
       </div>
    </header>
