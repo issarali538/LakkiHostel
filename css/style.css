@@ -22,6 +22,16 @@ ul{
    font-size: 32px;
    text-align: center;
 }
+#main-header #logo-hostel{
+   background: url("../images/hostel-logo.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 10px;
+
+}
+#main-header #logo-college{
+}
 #main-header ul{
    display: flex;
 }
@@ -36,6 +46,28 @@ ul{
 }
 #main-header li a:hover, #main-header li:first-child{
    background-color: #535c68;
+}
+/* footer file   */
+#main-footer{
+   padding: 50px;
+   text-align: center;
+   background-color: black;
+   color: white;
+}
+#main-footer h2{
+   font-size: 20px;
+}
+#main-footer ul{
+   margin: 0px;
+   text-align: center;
+}
+#main-footer a{
+   text-align: left;
+}
+#main-footer a::before{
+   content: "\f0a9";
+   font-family: fontawesome;
+   margin-right: 7px;
 }
 /* media query */
 @media(max-width: 768px){

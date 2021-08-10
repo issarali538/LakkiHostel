@@ -1,3 +1,39 @@
+<!-- php code for menu hover  -->
+<?php
+$home = "";
+$registration = "";
+$notification = "";
+$help = "";
+$contact = "";
+$about = "";
+$title = "";
+switch (basename($_SERVER['PHP_SELF'])) {
+   case 'registration.php':
+      $registration = "background-color:#535c68;";
+      $title = "Registration";
+      break;
+   case 'notification.php':
+      $notification = "background-color:#535c68;";
+      $title = "Notification";
+      break;
+   case 'help.php':
+      $help = "background-color:#535c68;";
+      $title = "Help";
+      break;
+   case 'contact.php':
+      $contact = "background-color:#535c68;";
+      $title = "Contact";
+      break;
+   case 'about.php':
+      $about = "background-color:#535c68;";
+      $title = "About";
+      break;
+   default:
+      $home =  "background-color:#535c68;";
+      $title = "Home";
+      break;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +41,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Header</title>
+   <title><?php echo $title ?></title>
    <!-- bootstrap  -->
    <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <!-- fontawesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
    <!-- custom css  -->
    <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
@@ -21,20 +58,20 @@
             <div class="col-md-12">
                <h1>Welcome to Kabir Hostel</h1>
             </div>
-            <div class="col-md-2">logCollege</div>
+            <div class="col-md-2" id="logo-hostel"></div>
             <!-- menue    -->
             <div class="col-md-8">
                <ul>
-                  <li><a id="home" href="#">Home</a></li>
-                  <li><a href="#">Reservation</a></li>
-                  <li><a href="#">Notification</a></li>
-                  <li><a href="#">Help?</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About Us</a></li>
+                  <li><a id="home" href="./index.php">Home</a></li>
+                  <li style=<?php echo $registration; ?>><a href="./registration.php">Registratioin</a></li>
+                  <li style=<?php echo $notification; ?>><a href="./notification.php">Notification</a></li>
+                  <li style=<?php echo $help; ?>><a href="./help.php">Help?</a></li>
+                  <li style=<?php echo $contact; ?>><a href="./contact.php">Contact</a></li>
+                  <li style=<?php echo $about; ?>><a href="./about.php">About Us</a></li>
                </ul>
             </div>
             <!-- hostel logo   -->
-            <div class="col-md-2">LogoHostel</div>
+            <div class="col-md-2" id="logo-college"></div>
          </div>
       </div>
    </header>

@@ -27,3 +27,4 @@ include "./header.php";
       <span class="visually-hidden">Next</span>
    </button>
 </div>
+<?php include "./footer.php"; ?>
