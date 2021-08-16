@@ -43,7 +43,7 @@ switch (basename($_SERVER['PHP_SELF'])) {
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title><?php echo $title ?></title>
    <!-- bootstrap  -->
-   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/bootstrap.css">
    <!-- fontawesome -->
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
    <!-- custom css  -->
@@ -59,7 +59,7 @@ switch (basename($_SERVER['PHP_SELF'])) {
                <h1>Welcome to Kabir Hostel</h1>
             </div>
             <div class="col-md-2" id="logo-hostel">
-               <div><img src="../images/hostel-logo.png" alt=""></div>
+               <div><a href="./index.php"><img src="../images/hostel-logo.png" alt=""></a></div>
             </div>
             <!-- menue    -->
             <div class="col-md-8">
