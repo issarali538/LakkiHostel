@@ -37,13 +37,21 @@ class database
    {
       if ($this->tableExist($table)) {
          $implode = implode(", ", $array);
-         $sql = "SELECT $implode FROM $table JOIN $join WHERE $where";
+         $sql = "SELECT $implode FROM $table";
+         if ($join != null) {
+            $sql .= " JOIN $join";
+         }
+         if($where != null){
+            $sql .= " WHERE $where";
+         }
          if ($offset != null) {
             $sql .= " OFFSET $offset";
          }
          if ($order_by != null) {
             $sql .= "ORDER BY $order_by";
          }
+         // echo $sql;
+         // die();
          $result = $this->mysql->query($sql);
          if ($result) {
             array_push($this->array, $result->fetch_all(MYSQLI_ASSOC));
@@ -66,7 +74,7 @@ class database
          array_push($this->array, "Table doesn't exist");
       }
    }
-  
+
    // udpate 
    public function udpate($table, $array = [], $where = "")
    {
@@ -123,10 +131,10 @@ class database
    }
    public function __destruct()
    {
-      if ($this->connection_status == true) {
+      if ($this->mysql == true) {
          $this->mysql->close();
          return true;
       }
    }
 }
-?>
+?>

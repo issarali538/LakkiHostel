@@ -54,7 +54,8 @@ include "../db-operations/others.php";
                         <div class="form-group form-group-sm">
                            <select name="subject" id="subject" class="form-control">
                               <option selected>Subject</option>
-                              <option value="Computer">Computer</option>
+                              <option value="Computer Science">Computer Science
+                              </option>
                               <option value="Chemistry">Chemistry</option>
                               <option value="Biology">Biology</option>
                               <option value="Mathematics">Mathematics</option>

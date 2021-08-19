@@ -64,34 +64,40 @@ ul {
 }
 #reg-form form input[type="text"],
 #reg-form form input[types="email"],
-#reg-form form input[types="submit"], 
+#reg-form form input[types="submit"],
 #reg-form form select {
   margin: 5px 0px;
 }
-#reg-form fom select{
-   margin: 5px 0px;
-
+#reg-form fom select {
+  margin: 5px 0px;
 }
 #additional-part {
   margin-top: 5px;
   padding: 10px;
 }
 /* notification file css  */
-#notification .notification-block{
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 255, .2);
+#notification .notification-block {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 255, 0.2);
 }
 /* help file css  */
-#help{
+#help {
   background-color: #bdc3c7;
   padding: 20px 0px;
   width: 100%;
   height: 100%;
 }
-#help .container{
+#help .container {
   background-color: white;
+  border-radius: 9px;
 }
-#help h2{
+#help h2 {
   margin: 10px 0px;
+  color: #16a085;
+  border-bottom: 1px solid #16a085;
+  padding-bottom: 5px;
+}
+#help .row {
+  border-radius: 5px;
 }
 /* footer file   */
 #main-footer {
