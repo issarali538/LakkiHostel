@@ -1,5 +1,6 @@
 <?php 
    include "../db-operations/operations.php";
+   session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +26,7 @@
                <ul>
                   <li><a href="./applications.php">Applications</a></li>
                   <li><a href="./inter.php">Interviews</a></li>
-                  <li><a href="#">Merit List</a></li>
+                  <li><a href="./merit.php">Merit List</a></li>
                   <li><a href="#">Notification</a></li>
                   <li><a href="#">Fee Changes</a></li>
                </ul>

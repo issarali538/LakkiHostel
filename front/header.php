@@ -1,9 +1,12 @@
 <!-- php code for menu hover  -->
 <?php
+include "../db-operations/operations.php";
+session_start();
 $home = "";
 $registration = "";
 $notification = "";
 $help = "";
+$merit = "";
 $contact = "";
 $about = "";
 $title = "";
@@ -19,6 +22,10 @@ switch (basename($_SERVER['PHP_SELF'])) {
    case 'help.php':
       $help = "background-color:#535c68;";
       $title = "Help";
+      break;
+   case 'merit.php':
+      $merit = "background-color:#535c68;";
+      $title = "Merit List";
       break;
    case 'contact.php':
       $contact = "background-color:#535c68;";
@@ -68,6 +75,7 @@ switch (basename($_SERVER['PHP_SELF'])) {
                   <li style=<?php echo $registration; ?>><a href="./registration.php">Registratioin</a></li>
                   <li style=<?php echo $notification; ?>><a href="./notification.php">Notification</a></li>
                   <li style=<?php echo $help; ?>><a href="./help.php">Help?</a></li>
+                  <li style=<?php echo $merit; ?>><a href="./merit.php">Merit List</a></li>
                   <li style=<?php echo $contact; ?>><a href="./contact.php">Contact</a></li>
                   <li style=<?php echo $about; ?>><a href="./about.php">About Us</a></li>
                </ul>

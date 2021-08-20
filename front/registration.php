@@ -1,6 +1,5 @@
 <?php
 include "./header.php";
-include "../db-operations/operations.php";
 include "../db-operations/others.php";
 ?>
 <section id="reg-form">
