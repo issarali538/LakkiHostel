@@ -128,8 +128,8 @@ include "../db-operations/others.php";
                         </div>
                      </div>
                      <div class="col-md-12 border" id="additional-part">
-                        <label for="diable">Are you Disable Student? </label>
-                        <input type="radio" value="5" class="form-check-input" name="disable" id="disable">Yes
+                        <label for="disable">Are you Disable Student? </label>
+                        <input type="radio" value="5" class="form-check-input" name="disable" id="disable">Yes     
                         <input type="radio" value="0" class="form-check-input" name="disable" id="disable">No
                         <small class="form-text text-danger" id="disableMsg"></small>
                         <hr>
@@ -138,7 +138,7 @@ include "../db-operations/others.php";
                         <input type="radio" value="0" class="form-check-input" name="old_std" id="old_std">No
                         <small class="form-text text-danger" id="old_stdMsg"></small>
                         <hr>
-                        <div class="form-control">
+                        <div class="form-group">
                            <input type="file" name="pic" class="form-control" id="pic">
                            <small class="form-text text-danger" id="picMsg">The pic must not greater then one Mbs</small>
                         </div>

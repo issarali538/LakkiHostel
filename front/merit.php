@@ -1,5 +1,6 @@
 <?php
 include "./header.php";
+
 ?>
 <section class="mt-2">
    <div class="container bg-white">
@@ -98,7 +99,7 @@ include "./header.php";
                                  <td><?php echo $value1["subject"]; ?></td>
                                  <td><?php echo $value1["deptt"]; ?></td>
                                  <td><?php echo $value1["seme"]; ?></td>
-                                 <td><a href="">Download</a></td>
+                                 <td><a href="./sleep.php?roll_no=<?php echo $value1['roll_no'];?>&subject=<?php echo $value1['subject']; ?>&deptt=<?php echo $value1['deptt']; ?>&seme=<?php echo $value1['seme']; ?>">Download</a></td>
                               </tr>
                            </tbody>
                         </table>

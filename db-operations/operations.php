@@ -48,7 +48,7 @@ class database
             $sql .= " OFFSET $offset";
          }
          if ($order_by != null) {
-            $sql .= "ORDER BY $order_by";
+            $sql .= " ORDER BY $order_by";
          }
          // echo $sql;
          // die();
@@ -65,6 +65,8 @@ class database
    {
       if ($this->tableExist($table)) {
          $sql = "INSERT INTO $table ($col) VALUES($val)";
+         // echo $sql;
+         // die();
          if ($this->mysql->query($sql)) {
             return true;
          } else {
@@ -85,6 +87,8 @@ class database
          }
          $implode = implode(", ", $args);
          $sql = "UPDATE $table SET $implode WHERE $where";
+         echo $sql;
+         // die();
          if ($this->mysql->query($sql)) {
             return true;
          } else {
@@ -103,8 +107,8 @@ class database
          if ($where != null) {
             $sql .= " WHERE $where";
          }
-         echo $sql;
-         die();
+         // echo $sql;
+         // die();
          if ($this->mysql->query($sql)) {
             return true;
          } else {

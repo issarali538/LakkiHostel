@@ -1,5 +1,6 @@
 <!-- php code for menu hover  -->
 <?php
+error_reporting(0);
 include "../db-operations/operations.php";
 session_start();
 $home = "";

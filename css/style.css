@@ -72,8 +72,8 @@ ul {
   margin: 5px 0px;
 }
 #additional-part {
-  margin-top: 5px;
-  padding: 10px;
+  margin-top: -24px;
+  padding: 5px 0px;
 }
 /* notification file css  */
 #notification .notification-block {
@@ -98,6 +98,32 @@ ul {
 }
 #help .row {
   border-radius: 5px;
+}
+#help ol li{
+  margin: 5px 0px;
+}
+/* about us file  */
+#about-us .row {
+  position: relative;
+  padding: 3rem 2rem;
+  background: purple;
+  color: white;
+  border-radius: 4px;
+}
+#about-us .img-box {
+  height: 281px;
+  width: 271px;
+  margin: 0px auto;
+}
+#about-us h4,
+h5,
+#about-us p {
+  margin: 0px 23px;
+  text-align: center;
+}
+#about-us .img-box img {
+  width: 100%;
+  height: 100%;
 }
 /* footer file   */
 #main-footer {

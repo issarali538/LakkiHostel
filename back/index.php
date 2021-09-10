@@ -1,5 +1,6 @@
 <?php
 include "../db-operations/operations.php";
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +30,7 @@ include "../db-operations/operations.php";
                   </div>
                   <div class="form-group my-3">
                      <input type="password" autocomplete="off" placeholder="password" name="password" id="password" class="form-control">
-                     <small class="form-text text-danger" id="loginMsg"></small>
+                     <small class="form-text text-danger bg-white" id="loginMsg"></small>
                   </div>
                   <input type="submit" name="login" value="Login" class="btn btn-success btn-block">
                </form>
@@ -57,7 +58,7 @@ if (isset($_POST["login"])) {
                $_SESSION["surename"] = $value1["surename"];
                $_SESSION["password"] = $value1["password"];
             }
-            header("location: http://localhost/lakkiHostel/back/header.php");
+            header("location: http://localhost/lakkiHostel/back/applications.php");
          } else {
             echo $s;
             echo "document.getElementById('loginMsg').innerHTML = 'Something Went wrong!'";

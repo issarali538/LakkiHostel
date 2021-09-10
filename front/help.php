@@ -1,53 +1,31 @@
 <?php
-include "../db-operations/operations.php";
 include "./header.php";
 ?>
 <section id="help">
    <div class="container">
       <div class="border row">
-         <h2 class="text-center">Common Ask Questions</h2>
+         <h2 class="text-center">Instructions to get Registration</h2>
          <div class="col-md-8 mx-auto">
-            <div id="accordion" class="m-4">
-               <div class="card">
-                  <div class="card-header">
-                     <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                        Q: How can I apply for the hostel registration in 2021?
-                     </a>
-                  </div>
-                  <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                     <div class="card-body">
-                        <span class="fw-bold text-success">Ans</span>: Your can apply likeYour can apply like Your can apply like Your can apply like Your can apply like Your can apply like Your can apply like Your can apply like
-                     </div>
-                  </div>
-               </div>
-
-               <div class="card">
-                  <div class="card-header">
-                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                        Collapsible Group Item #2
-                     </a>
-                  </div>
-                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                     <div class="card-body">
-                        Lorem ipsum..
-                     </div>
-                  </div>
-               </div>
-
-               <div class="card">
-                  <div class="card-header">
-                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                        Collapsible Group Item #3
-                     </a>
-                  </div>
-                  <div id="collapseThree" class="collapse" data-parent="#accordion">
-                     <div class="card-body">
-                        Lorem ipsum..
-                     </div>
-                  </div>
-               </div>
-            </div>
+            <ol>
+               <li>Student visit the <a href="./registration.php">Registration page</a> to fill the hostel form.</li>
+               <li>Property filled without escaping any entry.</li>
+               <li>The pic of the student is necessary (pic size must be one MB).</li>
+               <li>The student will wait untill the interview notification in not annouced.</li>
+               <li>All students attend the interview on appropiate data i.e show in the notification.</li>
+               <li>Attend the interview <span class="font-weight-bold">(this is very important)</span>.</li>
+               <li>Check the status on daily basic by visiting the <a href="./merit.php">merit list page</a></li>
+               <li>When Selected:
+                  <ol>
+                     <li>Download the band raseed.</li>
+                     <li>Deposite hostel fee to college bank account.</li>
+                     <li>Submit the deposite slip to clerk.</li>
+                  </ol>
+               </li>
+               <li>Visit the hostel to get their room key provided by wardon.</li>
+               <li>if any question visit the <a href="./contact.php">Contact page</a> for further information.</li>
+            </ol>
          </div>
       </div>
    </div>
 </section>
+<?php include "./footer.php" ?>
